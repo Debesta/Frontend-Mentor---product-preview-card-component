@@ -15,7 +15,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshot
 
-![](./images/image-product-desktop.jpg)
+![](./images/my-solution-desktop.png)
 ![](./images/my-solution-mobile.png)
 
 ## My process
