@@ -24,8 +24,8 @@ main {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 92%;
-		height: 80%;
+		width: 345px;
+		height: 608px;
 		border-radius: 10px;
 		overflow: hidden;
 		.product-image {
@@ -64,7 +64,7 @@ main {
 			}
 			.new-prize {
 				display: inline-block;
-				margin-bottom: 10px;
+                padding-right: 20px;
 				font-size: 2em;
 				font-family: 'Fraunces', serif;
 				color: c.$dark-cyan;
@@ -97,4 +97,33 @@ main {
 			}
 		}
 	}
+}
+
+@media (min-width: 1440px) {
+    main{
+        .product-card{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            height: 60%;
+            width: 40%;
+            .product-image{
+                height: 100%;
+                width: 50%;
+                background-image: url('../images/image-product-desktop.jpg');
+            }
+            .product-description{
+                height: 100%;
+                width: 50%;
+                padding: 30px 40px;
+
+                .basket-btn{
+                    p{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
 }
