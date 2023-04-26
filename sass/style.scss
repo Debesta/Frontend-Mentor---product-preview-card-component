@@ -24,7 +24,7 @@ main {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 345px;
+		max-width: 345px;
 		height: 608px;
 		border-radius: 10px;
 		overflow: hidden;
@@ -64,14 +64,14 @@ main {
 			}
 			.new-prize {
 				display: inline-block;
-                padding-right: 20px;
+				padding-right: 20px;
 				font-size: 2em;
 				font-family: 'Fraunces', serif;
 				color: c.$dark-cyan;
 			}
 			.old-prize {
 				text-decoration: line-through;
-                line-height: 2.5;
+				line-height: 2.5;
 			}
 			.basket-btn {
 				display: flex;
@@ -87,10 +87,10 @@ main {
 				color: c.$white;
 				transition: background-color 0.3s;
 				cursor: pointer;
-                p{
-                    width: 30%;
-                    color: c.$white;
-                }
+				p {
+					width: 30%;
+					color: c.$white;
+				}
 			}
 			.basket-btn:hover {
 				background-color: c.$darker-cyan;
@@ -100,30 +100,30 @@ main {
 }
 
 @media (min-width: 1440px) {
-    main{
-        .product-card{
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            background-color: #fff;
-            height: 60%;
-            width: 40%;
-            .product-image{
-                height: 100%;
-                width: 50%;
-                background-image: url('../images/image-product-desktop.jpg');
-            }
-            .product-description{
-                height: 100%;
-                width: 50%;
-                padding: 30px 40px;
+	main {
+		.product-card {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			height: 60%;
+			width: 40%;
+			.product-image {
+				height: 100%;
+				width: 50%;
+				background-image: url('../images/image-product-desktop.jpg');
+			}
+			.product-description {
+				height: 100%;
+				width: 50%;
+				padding: 30px 40px;
 
-                .basket-btn{
-                    p{
-                        width: 40%;
-                    }
-                }
-            }
-        }
-    }
+				.basket-btn {
+					p {
+						width: 40%;
+					}
+				}
+			}
+		}
+	}
 }
